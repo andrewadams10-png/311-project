@@ -1,0 +1,122 @@
+/* THIS IS MY CSS TEMPLATE FOR MY 311 REPORTING PROJECT */
+
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+
+/*********************************************************************
+ YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body { /* <--- MOVED: grouped font rules cleanly at the top */
+    font-size: 16px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background-color: darkslategrey;
+    margin: 20px;
+}
+
+.text {
+    margin: 30px auto;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 30px;
+    max-width: 650px;
+}
+
+.text p:not(.byline) {
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.subhead {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+
+.subhead a {
+    color: #darkslategrey;
+    text-decoration: underline;
+}
+
+.byline {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+figure {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+figcaption {
+    color: darkslategrey;
+    font-size: 12px;
+    margin-top: 14px;
+}
+
+.photo-credit {
+    display: block;
+    font-size: 10px;
+    color: grey;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+/*********************************************************************
+ DATAWRAPPER GRAPH
+*********************************************************************/
+
+.chart {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+
+/*********************************************************************
+ TABLET/DESKTOP STYLES
+*********************************************************************/
+
+@media (min-width: 681px) {
+
+    .text {
+        margin: 30px auto;
+    }
+
+}
+
+
+/*********************************************************************
+ DESKTOP-ONLY STYLES
+*********************************************************************/
+
+@media (min-width: 729px) {
+
+    .text {
+        margin: 30px auto;
+    }
+
+}
